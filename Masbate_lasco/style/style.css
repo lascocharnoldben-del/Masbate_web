@@ -1,0 +1,586 @@
+.header {
+    background-color: #11094f;
+    padding: 12px;
+    height: 90px;
+    display: flex;                 /* make header a flex container */
+    flex-direction: column;        /* stack h2 and nav vertically */
+    align-items: center;           /* center children horizontally */
+    justify-content: center; 
+    color: #FFFFFF;     
+}
+
+
+.header h1{
+
+  	padding: 12px;
+    color: #8675ff;
+    margin: 0;                     /* remove default margin */
+}
+
+nav {
+    display: flex;                 /* make links horizontal */
+    gap: 20px;                     /* spacing between links */
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 5px 10px;
+}
+nav a:hover{
+    background-color: #5290f2;
+}
+
+#Explore{
+	display: inline;
+}
+
+
+#Explore {
+    position: absolute;   /* position top-left */
+    top: 10px;
+    left: 10px;
+    padding: 12px;
+}
+
+/* Style the button */
+#Explore button {
+    background-color: #8675ff;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: sans-serif;
+    position: relative;
+}
+
+/* Dropdown menu */
+#Explore nav {
+    display: none;             /* hidden by default */
+    position: absolute;
+    top: 1;                 
+    left: 0;
+    background-color: #11094f;
+    min-width: 200px;
+    border-radius: 5px;	
+    z-index: 100;
+  
+}
+
+/* Dropdown links */
+#Explore nav a {
+    color: #fff;
+    padding: 10px;
+    text-deco   ation: none;
+    display: block;
+}
+
+#Explore nav a:hover {
+    background-color: #8675ff;
+}
+
+/* Show dropdown on hover */
+#Explore:hover nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.body {
+    position: relative;
+}
+
+.body img {
+    width: 100%;
+    display: block;  
+
+
+}
+
+.body h2,
+.body p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+}
+
+/* adjust vertical positions */
+.body h2 {
+    top: 40%;
+    font-size: 36px;
+}
+
+.body p {
+    top: 55%;
+    width: 60%;
+}   
+.gallery {
+    display: flex;               
+    justify-content: center;     
+    gap: 20px;                   
+    flex-wrap: wrap;             
+    margin: 20px ;              
+
+}
+
+.gallery img {
+    width: 300px;                
+    height: auto;                
+    border-radius: 10px; 
+    border-
+
+}
+
+.gallery p{
+	text-align: center;
+}
+
+.island1{
+    background-color:#999b9e ;
+}
+
+.island1 nav {
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    gap: 20px;                 
+    padding: 15px;
+}
+
+
+.island1 a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+
+
+.island1 h2{
+    padding: 12px;
+    font-family: sans-serif ;
+    text-align: center;
+}
+
+.footer{
+    margin: 12px;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 15px;
+	background-color: #11094f;
+	padding: 12px;
+	flex-shrink: 0px;
+	color: #FFFFFF;
+
+}/*----Buntod Sandbar----*/
+
+.Buntod {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sanbar {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 400px;
+    background: #c8c9cc;
+}
+
+.sanbar img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.sanbar p {
+    text-align: justify;
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/*---------Animasola Island-----------*/
+
+.Animasola{
+    text-align: center;
+    padding: 12px;
+    gap: 12px;
+    border: 1px solid;
+}
+
+.Animasola1 img{
+    width: 600px;
+    height: 400px;
+    border-radius: 12px;    
+}
+
+.Animasola1 p{
+    text-align: justify;
+    font-family: sans-serif;
+}
+
+/*----MAngrovetum---*/
+
+.Mangrovetum {
+    display: flex;
+    flex-wrap: wrap;              
+    align-items: center;
+    justify-content: center;      
+    gap: 30px;
+    padding: 30px;
+}
+
+
+.Mangrovetum1 {
+    max-width: 450px;
+}
+
+
+.Mangrovetum img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;            
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+
+.Mangrovetum p {
+    text-align: justify;          
+    font-size: 16px;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+/*------Nature-----*/
+
+.nature {
+    display: flex;
+    border: 1px solid;
+    gap: 20px;
+    background-color:#c2c3c4;
+}
+
+.nature1 {
+    flex: 1;
+    text-align: center; /* centers text + image */
+}
+
+.nature1 img {
+    margin: 12px;
+    padding: 12px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: solid 1px;
+    border-radius: 12px;
+}
+
+.nature1 p{
+    font-family: sans-serif;
+    padding: 12px;
+
+}
+
+/*--Palani---*/
+.palani1 {
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+    flex-wrap: wrap; 
+    border: 1px solid;
+}
+
+.palani1 img {
+    margin: 20px;
+    width: 200px;
+    height: auto;
+    border-radius: 12px;
+    width: 500px;
+}
+.palani1 p{
+    text-align: center;
+    padding: 12px;
+}
+
+/*-----ticao---*/
+
+.ticao1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    text-align: center;
+    border: 1px solid;
+
+}
+
+.ticao1 img {
+    margin: 12px;
+    width: 250px;
+    height: auto;
+}
+.ticao1 p{
+    font-family: sans-serif;
+}
+
+/*-----Bugui---*/
+
+.Bugui img{
+    display: flex;
+    margin: 12px auto;
+    width: 450px;
+    height: 250px;
+    border-radius: 12px;
+}
+
+.Bugui p{
+    text-align: center;
+    border: 1px solid;
+    padding: 12px;
+}
+
+/* Talinayas*/
+
+.talinayas{
+    border: 1px solid;
+    text-align: center;
+    display: flex;
+    margin: 12px auto;
+    align-items: center;
+    background-color: #d5d8de   ;
+}
+
+.talinayas img{
+    width: 100%;
+    height: auto;
+}
+
+/* Sombrero */
+
+.sombrero{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 12px;
+    background-color:#cdd1ce ;
+}
+
+.sombrero1 img{
+    padding: 20px;
+    border-radius: 12px;
+}
+.sombrero2{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/*rodeo*/
+
+.rodeo {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
+}
+.rodeo img{
+    width: 350px;
+    height: 200px;
+    border-radius: 12px;
+
+}
+
+.rodeo1 p{
+    border: 1px solid;
+    padding: 12px;
+    border-radius: 12px;
+
+}
+
+/* Villa */
+
+.villa img{
+    margin: 12px auto;
+    display: flex;
+    border-radius: 12px;
+}
+
+.villa p{
+    text-align: center;
+    font-family: sans-serif;
+}
+/*batongan*/
+    
+.batongan img{
+    margin: 12px auto;
+    display: flex;
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.batongan p{
+    text-align: center;
+    font-family: sans-serif;
+    border: 1px solid;
+    padding: 12px;
+}
+/*borobancaso*/
+
+.boro {
+    margin: 12px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.boro img{
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+
+}
+
+.boro2{
+    text-align: center;
+    justify-content: center;
+}
+
+
+/*matayum*/
+.matayum{
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#matayum1 {
+    border: 1px solid;  
+    padding: 12px;
+    margin: 0 auto;
+    gap: 12px;
+}
+
+#matayum1 img{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px   ;
+}
+
+#matayum1 p{
+    font-family: sans-serif;
+    background-color:#e4eaf5 ;
+    padding: 20px ;
+    text-align: center;
+}
+
+/*Licuson*/
+#licuson img{
+   width: 100%; 
+   height: 450px;
+   padding: 12px;
+}
+
+#licuson p{
+    background-color:#e4eaf5 ;
+    padding: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/*Porta Vega*/
+
+.porta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+    gap: 40px;                
+    padding: 20px;
+}
+
+.porta1 {
+    width: 250px;             
+    text-align: center;
+    border: 1px solid;
+    padding: 20px; 
+    border-radius: 12px;
+    background-color:#e4eaf5 ;  
+}
+
+.porta1 img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px; 
+}
+
+/*mantana*/
+.mantana{
+    display: flex;
+}
+.mantana img{
+    width: 100%;
+    height: 350px;
+    margin: 0px;
+}
+
+.mantana p{
+    text-align: center;
+    background-color:#e4eaf5 ;
+    padding: 20px;
+}
+
+/*cantamdayagan*/
+.can{
+    display: inline;
+    flex-wrap: wrap;
+}
+
+.can img{
+    width: 100%;
+}
+.can p{
+    margin: 20px;
+    background-color:#e4eaf5;
+    padding: 12px;
+    text-align: center;
+}
+
+
+/* ABOUT PAGE STYLING */
+.about {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    background: #f1f5f9; 
+}
+
+.about-container {
+    max-width: 800px;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    line-height: 1.7;
+}
+
+.about-container h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #0f172a; /* deep blue for readability */
+}
+
+.about-container p {
+    font-size: 18px;
+    color: #334155; /* soft dark gray for easy reading */
+    margin-bottom: 20px;
+}
+
